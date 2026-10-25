@@ -147,8 +147,7 @@ def run(watchlist=None):
         f"# Reddit buying-signal digest — {today}",
         "",
         f"Watchlist: {', '.join(sub_list)}",
-        f"Scanned: {len(posts)} posts · Feed: tikhub app-feed ($0.001/call via treg.to)",
-        f"Actual API cost of this run: **${COST_PER_CALL * calls_count:.4f}**",
+        f"Scanned: {len(posts)} posts · Feed: treg.to reddit endpoints",
         "",
         "| # | Score | Cmts | Subreddit | Post | Why it's here |",
         "|---|-------|------|-----------|------|---------------|",
@@ -165,8 +164,7 @@ def run(watchlist=None):
     if kept == 0:
         lines.append("*No posts crossed the buying-signal threshold today — silence is a valid result.*")
     lines += ["", f"---",
-              f"Runs are pay-per-call via treg.to: provider APIs priced per call, cents not subscriptions.",
-              f"Actual cost of this digest: **${COST_PER_CALL * calls_count:.4f}** · "
+              "Data fetched via treg.to pay-per-call platform APIs.",
               "Filters follow the signal-triage law: stack signals before acting.", ""]
     return "\n".join(lines), kept, len(posts)
 
