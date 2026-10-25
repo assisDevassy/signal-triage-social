@@ -7,7 +7,7 @@ Pulls recent posts from a subreddit watchlist via [treg.to](https://treg.to)
 pay-per-call platform APIs, scores each post against buying-signal markers
 locally, and writes a markdown digest + JSON.
 
-Built around the [signal-triage](https://github.com/dissi-00/signal-triage) law:
+Built around the [signal-triage](https://github.com/assisDevassy/signal-triage) law:
 a single soft hit is a breadcrumb, not demand. Stack signals before acting.
 
 ## Run
