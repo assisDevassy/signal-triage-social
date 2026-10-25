@@ -14,7 +14,7 @@ Usage:
 Env:
     TREG_TOKEN   your treg.to API token (backend reads .treg/config.json if absent)
     SUBREDDITS   comma-separated override of the watchlist
-Cost: ~$0.001-0.002 per run (documented in README; misses bill at $0.00035).
+
 """
 import json, os, re, sys, urllib.request, datetime, pathlib
 
@@ -67,7 +67,6 @@ def fetch_subreddit(sub):
         p["_sub"] = sub.strip()
         out.append(p)
     return out
-
 
 def parse_tikhub_feed(r):
     """Flatten the tikhub app-feed (graph cells) into flat post dicts."""
